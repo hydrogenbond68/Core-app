@@ -1,0 +1,207 @@
+/* src/components/Navbar.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes slideshow {
+  0% { background-image: url('https://wallpapers.com/images/featured/aesthetic-car-5il85ct1b3x5oqyd.jpg'); }
+  33% { background-image: url('https://w0.peakpx.com/wallpaper/280/517/HD-wallpaper-blue-aesthetic-new-york-city-buildings-sky-background-blue-aesthetic.jpg'); }
+  66% { background-image: url('https://4kwallpapers.com/images/wallpapers/anime-girl-4480x2520-10032.jpg'); }
+  100% { background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20230611/pngtree-headphones-on-a-beach-with-neon-lights-image_2931864.jpg'); }
+}
+
+
+
+.animate-slideshow {
+  animation: slideshow 15s infinite;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Slide Up Animation */
+@keyframes slideUp {
+  0% { transform: translateY(50px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+.animate-slideUp {
+  animation: slideUp 1s ease-in-out;
+}
+
+/* Pulse Animation */
+.animate-pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    flex: 1;
+  }
+  
+  .search-input {
+    flex: 1;
+    margin-right: 0.5rem;
+    border-radius: 25px;
+    padding-left: 2.5rem; /* Adjust padding to make space for icon */
+    position: relative;
+  }
+  
+  .search-input::before {
+    content: '\f002'; /* Unicode for search icon */
+    font-family: 'Font Awesome 5 Free'; /* Use Font Awesome font */
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6c757d; /* Color for the icon */
+  }
+  
+  .search-button {
+    border-radius: 25px;
+  }
+  /* src/components/HashtagsSection.css */
+.hashtags-section {
+  margin: 2rem 0;
+}
+
+.hashtag-card {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.hashtag-card:hover {
+  transform: scale(1.05);
+}
+/* src/components/Navbar.css */
+
+.profile-dropdown {
+  position: absolute;
+  top: 60px; /* Adjust based on navbar height */
+  right: 0;
+  width: 250px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.profile-picture {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 1rem;
+}
+
+.profile-details {
+  flex: 1;
+}
+
+.logout-button {
+  width: 100%;
+}
+/* src/components/Navbar.css */
+.search-form {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  flex: 1;
+}
+
+.search-input {
+  flex: 1;
+  margin-right: 0.5rem;
+  border-radius: 25px;
+  padding-left: 2.5rem; /* Adjust padding to make space for icon */
+  position: relative;
+}
+
+.search-input::before {
+  content: '\f002'; /* Unicode for search icon */
+  font-family: 'Font Awesome 5 Free'; /* Use Font Awesome font */
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6c757d; /* Color for the icon */
+}
+
+.search-button {
+  border-radius: 25px;
+}
+/* src/components/Footer.css */
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 10px;
+}
+
+.footer-section h3 {
+  border-bottom: 2px solid #777;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+}
+
+.footer-section .social-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.footer-section .social-links a:hover {
+  color: #ddd;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #444;
+}

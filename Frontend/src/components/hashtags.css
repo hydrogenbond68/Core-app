@@ -1,0 +1,74 @@
+/* src/styles.css */
+
+/* Style for the Boards List */
+.boards-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 20px;
+    justify-content: center;
+  }
+  
+  .board-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px; /* Adjust as needed */
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .board-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .board-item h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    padding: 10px;
+    text-align: center;
+    background-color: #f8f8f8;
+    color: #333;
+  }
+  
+  /* Style for the Individual Board Page */
+  .board {
+    padding: 20px;
+  }
+  
+  .pins {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+  }
+  
+  .pin {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 200px; /* Adjust as needed */
+  }
+  
+  .pin:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .pin img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .pin p {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    background-color: #f8f8f8;
+    color: #333;
+  }
